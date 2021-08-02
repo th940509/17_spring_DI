@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "https://www.springframework.org/dtd/spring-beans-2.0.dtd" >
+<beans>                 <!-- class에서 객체를 new 해서 만든다고 생각하면 됨. -->
+
+	<bean id="characterManager2" class="com.spring.di.CharacterManager2"/>
+	
+	<bean id="warrior" class="com.spring.di.Warrior"/>
+	
+		<!-- property태그의 name과 value 속성으로 POJO에 대한 값을 지정할 수 있다. -->
+		<!-- name은 setter메서드가 있어야 동작한다. -->
+		<!-- 모양은 변수와 같지만 setter가 없으면 인식하지 않는다. -->
+	<bean id="wizard" class="com.spring.di.Wizard">
+		<property name="occupation" value="승급 마법사2"/>
+		<property name="level"      value="30"/>
+	</bean>
+	
+	<bean id="hunter1" class="com.spring.di.Hunter">
+		<property name="occupation" value="승급 궁수 2-1"/>
+		<property name="level"      value="30"/>
+	</bean> 
+	
+	<bean id="hunter2" class="com.spring.di.Hunter">
+		<property name="occupation" value="승급 궁수 2-2"/>
+		<property name="level"      value="30"/>
+	</bean> 
+</beans>
