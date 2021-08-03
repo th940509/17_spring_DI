@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class DI_test2 {
+public class DI_Test2 {
 	@RequestMapping(value="/test2" , method=RequestMethod.GET)
 	public String test2() {
 		
